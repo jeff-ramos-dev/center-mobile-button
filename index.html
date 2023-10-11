@@ -2,23 +2,49 @@
     <head>
         <style>
             body {
-                display: grid;
-                place-items: center;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
                 background-color: black;
-                height: 200px;
             }
             button {
                 background-color:mediumpurple;
                 color: black;
+                border-radius: 100%;
+                border: 2px solid white;
+            }
+            #one {
+                height: 100px;
+                width: 100px;
+                font-size: 100px;
+            }
+            #two {
+                height: 100px;
+                width: 100px;
+                font-size: 80px;
+            }
+            #three {
+                height: 100px;
+                width: 100px;
+                font-size: 60px;
+            }
+            #four {
                 height: 100px;
                 width: 100px;
                 font-size: 40px;
-                border-radius: 100%;
-                border: 2px solid white;
+            }
+            #five {
+                height: 100px;
+                width: 100px;
+                font-size: 20px;
             }
         </style>
     </head>
     <body>
-        <button>+</button>
+        <button id="one">+</button>
+        <button id="two">+</button>
+        <button id="three">+</button>
+        <button id="four">+</button>
+        <button id="five">+</button>
     </body>
 </html>
