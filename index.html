@@ -99,6 +99,36 @@
                 max-height: 100px;
                 max-width: 100px;
             }
+            .facebook {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 100px;
+                background-color: mediumpurple;
+                border: 2px solid white;
+                border-radius: 50%;
+                transform: translateY(20%);
+            }
+            .facebook > svg {
+                transform: scale(5);
+            }
+            .facebook > p {
+                position: absolute;
+                top: -50px;
+            }
+            .discord {
+                justify-content: space-between;
+                height: 120px;
+                transform: translateY(-10%);
+            }
+
+            .discord > svg {
+                width: 25px;
+                height: 25px;
+                transform: scale(5);
+            }
         </style>
     </head>
     <body>
@@ -163,6 +193,20 @@
                 <button id="thirteen">
                     <img src="./Plus-Icon.png" alt="Plus Icon" />
                 </button>
+            </div>
+            <div class="btn-container facebook">
+                <p>Facebook SVG</p>
+                <svg fill="currentColor" viewBox="0 0 24 24" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 x1qx5ct2 xw4jnvo">
+                    <path d="M11 19a1 1 0 1 0 2 0v-6h6a1 1 0 1 0 0-2h-6V5a1 1 0 1 0-2 0v6H5a1 1 0 1 0 0 2h6v6z"></path>
+                </svg>
+            </div>
+            <div class="btn-container discord">
+                <p>Discord SVG</p>
+                    <svg>
+                        <path
+                            fill="mediumpurple" 
+                            d="M12 2.00098C6.486 2.00098 2 6.48698 2 12.001C2 17.515 6.486 22.001 12 22.001C17.514 22.001 22 17.515 22 12.001C22 6.48698 17.514 2.00098 12 2.00098ZM17 13.001H13V17.001H11V13.001H7V11.001H11V7.00098H13V11.001H17V13.001Z"></path>
+                    </svg>
             </div>
         </div>
     </body>
